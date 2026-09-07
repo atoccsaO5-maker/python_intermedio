@@ -1,20 +1,20 @@
-## usando while crear un programa que me de una pregunta para respomder y que solo tenga tres oportunidades para dar con la respuesta correcta
+###1. deseamos mostraar los numeros del 0 al 5 con la funcion ranger
+for numero in range(6):
+    print(numero)
 
-intentos: int = 0
-respuesta_correcta: str = "python"
+## deseamos mostrar el numero del 2 al 6
+for numero in range(2,7):
+    print(numero)
+print("------------")   
 
-while intentos < 3:
-    respuesta: str = input("¿Qué lenguaje de programación usa 'print' para mostrar en pantalla? ").lower()
-    intentos += 1
+### mostrar los nueros pares que exiten entre numero 10
+for pares in range(2,11,2):
+    print(pares)
+    
 
-    if respuesta == respuesta_correcta:
-        print("¡Correcto!")
-        break
-    else:
-        restantes: int = 3 - intentos
-        if restantes > 0:
-            print(f"Incorrecto. Te quedan {restantes} intento(s).")
-        else:
-            print("Incorrecto. Se acabaron tus intentos.")
 
-print("Fin del programa.")
+
+
+
+
+
